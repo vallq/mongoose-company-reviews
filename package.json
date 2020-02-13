@@ -11,7 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.8.12"
+  },
+  "devDependencies": {
     "jest": "^25.1.0",
+    "mongodb-memory-server": "^6.2.4",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
