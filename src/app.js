@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 const apiEndpoints = require("./apiEndpoints.js");
+const companyRouter = require("./routes/companies.route.js");
 
 app.use(express.json());
+app.use("/companies", companyRouter);
 
 //0: GET API endpoints
 app.get("/", (req, res) => {
